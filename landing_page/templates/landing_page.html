@@ -2,16 +2,42 @@
 
 {% block content %}
 {% include 'style.html' %}
+<header>
+        <h1 class="title _font0" id="header_title">
+            Hi there!
+        </h1>
+</header>
+<div class="side_bar">
+<a href="#about">about me!</a>
+<a href="#project1">project1!</a>
+<a href="#project2">project2!</a>
+</div>
 <div class="container">
-    <div class="about">
-        <p class="title">
-            about me
-        </p>
-        <article class="about_article">
-            I'm Eran,
-            <br>
-            and I'm a fullstack developer.
-        </article>
+    <div class="about" id="about">
+        hello world
+    </div>
+    <div class="project_showcase" id="project1">
+    </div>
+    <div class="project_showcase" id="project2">
     </div>
 </div>
+<script>
+    function next_font(current_font_index, element_id) {
+        let element = document.getElementById(element_id);
+        element.classList.remove(`_font${current_font_index}`);
+        if (current_font_index >= 15) {
+            current_font_index = 0;
+        }
+        else {
+            ++current_font_index;
+        }
+        element.classList.add(`_font${current_font_index}`);
+        return current_font_index;
+    }
+    let current_font_index = 0;
+    // setInterval(() => {
+    //     let element_id = 'header_title';
+    //     current_font_index = next_font(current_font_index, element_id);
+    // }, 400);
+</script>
 {% endblock content %}
