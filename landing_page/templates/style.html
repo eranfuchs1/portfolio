@@ -16,7 +16,10 @@
     header {
         text-align: center;
         height: 200px;
-        box-shadow: rgba(189, 117, 189, 0.205) 0px -50px 36px -28px inset;
+        box-shadow: rgba(255, 73, 73, 0.205) 0px -50px 36px -28px inset;
+    }
+    .beg {
+        font-size: 30px;
     }
     .page {
         height: 100%;
@@ -24,7 +27,7 @@
     .side_bar_container {
         position: absolute;
         display: block;
-        width: 38%;
+        width: 49%;
         height: 720vh;
     }
     .side_bar_item {
@@ -45,9 +48,9 @@
         margin-left: 50px;
         width: 100%;
         height: 400%;
-        -webkit-box-shadow: 64px 0px 32px -28px rgba(219,186,219,0.82);
-        -moz-box-shadow: 64px 0px 32px -28px rgba(219,186,219,0.82);
-        box-shadow: 64px 0px 32px -28px rgba(219,186,219,0.82);
+        -webkit-box-shadow: 64px 0px 32px -28px rgba(255, 73, 73, 0.205);
+        -moz-box-shadow: 64px 0px 32px -28px rgba(255, 73, 73, 0.205);
+        box-shadow: 64px 0px 32px -28px rgba(255, 73, 73, 0.205);
         z-index: 1;
         transition: margin-left 1s;
         /* position: absolute; */
@@ -73,8 +76,8 @@
         flex-direction: column;
         text-align: center;
         justify-content:space-between;
-        width: 60%;
-        margin-left: 39%;
+        width: 50%;
+        margin-left: 50%;
         height: 720vh;
     }
     .about {
@@ -87,9 +90,22 @@
     .project_showcase {
         height: 100vh;
         display: block;
+        font-weight: bold;
+        font-size: 21px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: left;
+    }
+    .project_showcase>article {
+        width: 50%;
+        text-align: left;
     }
     .project_showcase>img {
-        width: 100%;
+        width: 90%;
+        border-radius: 30px;
+        transition: border-radius 0.5s;
+    }
+    .project_showcase>img:hover {
+        border-radius: 70px;
     }
     ._font0 {
         font-family: 'Courier New', Courier, monospace;
