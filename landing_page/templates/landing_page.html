@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% load static %}
 {% block content %}
 {% include 'style.html' %}
 <header>
@@ -15,6 +16,7 @@
             </div>
             <div class="side_bar_item" onclick="location.href='#project1';">
                 <h3>draw factory</h3>
+                <img src="{% static 'landing_page/draw_factory.png' %}" alt="My image">
             </div>
             <div class="side_bar_item" onclick="location.href='#project2';">
                 <h3>project2!</h3>
@@ -36,6 +38,7 @@
             <p>and so on, until all tools have been used in order.</p>
             <p>The final product or drawing is displayed in a show-all</p>
             <p>page.</p>
+            <img src="{% static 'landing_page/draw_factory.gif' %}" alt="My image">
         </div>
         <div class="project_showcase" id="project2">
         </div>
