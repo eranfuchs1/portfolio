@@ -5,7 +5,7 @@
 {% include 'style.html' %}
 <header>
         <h1 class="title _font0" id="header_title">
-            Hi there!
+            Welcome to Eran’s Website
         </h1>
 </header>
 <div class="page">
@@ -14,6 +14,7 @@
             <div class="side_bar_item" onclick="location.href='#about';">
                 <div class="side_bar_item_expand">
                     <h3>about me!</h3>
+                    <img class="eran_img" src="{% static 'landing_page/eran.jpeg' %}" alt="eran jpeg">
                 </div>
             </div>
             <div class="side_bar_item" onclick="location.href='#project1';">
@@ -24,14 +25,25 @@
             </div>
             <div class="side_bar_item" onclick="location.href='#project2';">
                 <div class="side_bar_item_expand">
-                    <h3>project2!</h3>
+                    <h3>aircraft carrier</h3>
+                    <img src="{% static 'landing_page/aircraft_carrier.png' %}" alt="aircraft carrier png">
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="about" id="about">
-            hello world
+        <div class="about project_showcase" id="about">
+            <br>
+            <br>
+            <article>
+                <span class="beg">I</span> love programming.
+                Ever since I wrote my first line of code, I was hooked.
+                My first language was C#, and from there I moved to other languages
+                and frameworks as self taught/hobby (C, C++, Java, Python, Javascript, Bash).
+            </article>
+            <br>
+            <br>
+            <img src="{% static 'landing_page/eran.gif' %}" alt="eran gif">
         </div>
         <div class="project_showcase" id="project1">
             <br>
@@ -53,6 +65,21 @@
             <img onclick="window.open('http://draw-factory.net', '_blank').focus();" src="{% static 'landing_page/draw_factory.gif' %}" alt="draw factory gif">
         </div>
         <div class="project_showcase" id="project2">
+            <br>
+            <br>
+            <article>
+                <span class="beg">T</span>his project was my first hackathon and
+                first winner of a hackathon. You are a jet fighter pilot, starting off
+                on an aircraft carrier. The map is continously randomly generated, so it's
+                essentially infinite.
+                <br>
+                With the radar on the bottom right, find and bomb as many enemy fighter
+                jets as possible, which gives your fighter jet extra fuel (fuel can also come
+                from bombing land).
+            </article>
+            <br>
+            <br>
+            <img onclick="window.open('http://139.162.203.252', '_blank').focus();" src="{% static 'landing_page/aircraft_carrier.gif' %}" alt="aircraft carrier gif">
         </div>
     </div>
 </div>
